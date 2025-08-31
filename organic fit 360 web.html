@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Fitness - Entrenamiento y Nutrición</title>
+    <style>
+        :root {
+            --primary: #2ecc71;
+            --secondary: #3498db;
+            --dark: #2c3e50;
+        }
+        
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, var(--dark) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .hero {
+            padding: 4rem 2rem;
+            text-align: center;
+            background: #f9f9f9;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1rem;
+        }
+        
+        .section {
+            padding: 3rem 2rem;
+        }
+        
+        .programs {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .program-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .program-content {
+            padding: 1.5rem;
+        }
+        
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .programs {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <h1>Mi Fitness</h1>
+            <p>Transforma tu cuerpo, transforma tu vida</p>
+        </div>
+    </div>
+
+    <div class="hero">
+        <div class="container">
+            <h2>Programas de entrenamiento para todos los niveles</h2>
+            <p>Descubre rutinas personalizadas, planes nutricionales y los mejores suplementos</p>
+            <a href="#programas" class="btn">Comenzar ahora</a>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container">
+            <h2 id="programas" style="text-align: center;">Nuestros Programas</h2>
+            <div class="programs">
+                <div class="program-card">
+                    <div class="program-content">
+                        <h3>Para Principiantes</h3>
+                        <p>Rutinas suaves para iniciarse en el fitness con enfoque en técnica y consistencia.</p>
+                        <a href="#" class="btn">Ver detalles</a>
+                    </div>
+                </div>
+                <div class="program-card">
+                    <div class="program-content">
+                        <h3>Pérdida de Peso</h3>
+                        <p>Entrenamientos intensivos para maximizar quema de calorías y acelerar metabolismo.</p>
+                        <a href="#" class="btn">Ver detalles</a>
+                    </div>
+                </div>
+                <div class="program-card">
+                    <div class="program-content">
+                        <h3>Ganancia Muscular</h3>
+                        <p>Programas de fuerza e hipertrofia para desarrollar masa muscular efectivamente.</p>
+                        <a href="#" class="btn">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>© 2023 Mi Fitness - Todos los derechos reservados</p>
+            <p>Contacto: info@mifitness.com | Síguenos en redes sociales</p>
+        </div>
+    </footer>
+</body>
+</html>
