@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitLife - Fitness, Nutrición y Suplementos</title>
+    <style>
+        :root {
+            --primary: #2ecc71;
+            --secondary: #3498db;
+            --dark: #2c3e50;
+            --light: #ecf0f1;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+            padding-top: 70px;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, var(--dark) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            text-align: center;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .hero {
+            padding: 3rem 1rem;
+            text-align: center;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80') center/cover no-repeat;
+            color: white;
+            border-radius: 10px;
+            margin: 1rem;
+        }
+        
+        .hero h1 {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: all 0.3s;
+        }
+        
+        .btn:hover {
+            background: #27ae60;
+            transform: translateY(-2px);
+        }
+        
+        .section {
+            padding: 2rem 1rem;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: var(--dark);
+        }
+        
+        .programs {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .program-card {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .program-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+        
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .price {
+            color: var(--primary);
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin: 0.5rem 0;
+        }
+        
+        .testimonials {
+            background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%);
+            color: white;
+            padding: 2rem 1rem;
+            border-radius: 10px;
+            margin: 1rem;
+        }
+        
+        .testimonial-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 1rem 0;
+        }
+        
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .programs, .products {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <h1>FitLife</h1>
+            <p>Tu camino hacia el fitness</p>
+        </div>
+    </div>
+
+    <div class="hero">
+        <div class="container">
+            <h1>Transforma tu cuerpo, transforma tu vida</h1>
+            <p>Programas de entrenamiento, nutrición y suplementos para alcanzar tus metas</p>
+            <a href="#programas" class="btn">Comenzar ahora</a>
+        </div>
+    </div>
+
+    <div class="section" id="programas">
+        <div class="container">
+            <div class="section-title">
+                <h2>Programas de Entrenamiento</h2>
+                <p>Adaptados a todos los niveles y objetivos</p>
+            </div>
+            <div class="programs">
+                <div class="program-card">
+                    <h3>Para Principiantes</h3>
+                    <p>Rutinas suaves para iniciarse en el fitness con enfoque en técnica y consistencia.</p>
+                    <a href="#" class="btn">Ver detalles</a>
+                </div>
+                <div class="program-card">
+                    <h3>Pérdida de Peso</h3>
+                    <p>Entrenamientos intensivos para maximizar quema de calorías y acelerar metabolismo.</p>
+                    <a href="#" class="btn">Ver detalles</a>
+                </div>
+                <div class="program-card">
+                    <h3>Ganancia Muscular</h3>
+                    <p>Programas de fuerza e hipertrofia para desarrollar masa muscular efectivamente.</p>
+                    <a href="#" class="btn">Ver detalles</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Suplementos Recomendados</h2>
+                <p>Productos de calidad para complementar tu entrenamiento</p>
+            </div>
+            <div class="products">
+                <div class="product-card">
+                    <h3>Proteína Whey</h3>
+                    <p>Proteína de suero de leche para recuperación muscular.</p>
+                    <p class="price">€39.99</p>
+                    <a href="#" class="btn">Comprar ahora</a>
+                </div>
+                <div class="product-card">
+                    <h3>Creatina Monohidratada</h3>
+                    <p>Aumenta tu fuerza y rendimiento en entrenamientos intensos.</p>
+                    <p class="price">€24.99</p>
+                    <a href="#" class="btn">Comprar ahora</a>
+                </div>
+                <div class="product-card">
+                    <h3>Quemador de Grasa</h3>
+                    <p>Suplemento termogénico para acelerar metabolismo.</p>
+                    <p class="price">€29.99</p>
+                    <a href="#" class="btn">Comprar ahora</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Historias de Éxito</h2>
+                <p>Transformaciones reales de nuestros clientes</p>
+            </div>
+            <div class="testimonial-card">
+                <p>"Gracias a FitLife he perdido 15kg en 4 meses y recuperado mi confianza. ¡La mejor decisión!"</p>
+                <p><strong>- María L., 32 años</strong></p>
+            </div>
+            <div class="testimonial-card">
+                <p>"Los planes de nutrición son fáciles de seguir. He ganado 5kg de músculo en 3 meses."</p>
+                <p><strong>- Carlos R., 28 años</strong></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <h3>FitLife</h3>
+            <p>Tu camino hacia una vida más saludable y fuerte</p>
+            <p>Contacto: info@fitlife.com | Síguenos en redes sociales</p>
+            <p>© 2023 FitLife - Todos los derechos reservados</p>
+        </div>
+    </footer>
+</body>
+</html>
